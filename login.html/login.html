@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login System</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background:#f2f2f2;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+        .box{
+            width:300px;
+            padding:20px;
+            background:white;
+            border-radius:8px;
+            box-shadow:0 0 10px gray;
+            text-align:center;
+        }
+        input{
+            width:90%;
+            padding:8px;
+            margin:8px 0;
+        }
+        button{
+            width:100%;
+            padding:8px;
+            background:blue;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+        a{
+            display:block;
+            margin-top:10px;
+            color:blue;
+            cursor:pointer;
+        }
+        .page{
+            display:none;
+        }
+    </style>
+
+    <script>
+        function showPage(id){
+            var pages=document.getElementsByClassName("page");
+            for(var i=0;i<pages.length;i++){
+                pages[i].style.display="none";
+            }
+            document.getElementById(id).style.display="block";
+        }
+
+        window.onload=function(){
+            showPage("login");
+        }
+    </script>
+</head>
+
+<body>
+
+<!-- Login Page -->
+<div id="login" class="box page">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+    <button>Login</button>
+
+    <a onclick="showPage('forgot')">Forgot Password?</a>
+    <a onclick="showPage('register')">Create New Account</a>
+</div>
+
+<!-- Forgot Page -->
+<div id="forgot" class="box page">
+    <h2>Forgot Password</h2>
+    <input type="email" placeholder="Enter Email">
+    <button>Submit</button>
+    <a onclick="showPage('login')">Back to Login</a>
+</div>
+
+<!-- Register Page -->
+<div id="register" class="box page">
+    <h2>Create New Account</h2>
+    <input type="text" placeholder="Username">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Register</button>
+    <a onclick="showPage('login')">Back to Login</a>
+</div>
+
+</body>
+</html>
