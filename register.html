@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background:#f2f2f2;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+        .box{
+            width:350px;
+            padding:20px;
+            background:white;
+            border-radius:8px;
+            box-shadow:0 0 10px gray;
+            text-align:center;
+        }
+        input{
+            width:95%;
+            padding:8px;
+            margin:8px 0;
+        }
+        button{
+            width:100%;
+            padding:8px;
+            background:green;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+        a{
+            display:block;
+            margin-top:10px;
+            color:blue;
+            text-decoration:none;
+        }
+    </style>
+
+    <script>
+        function registerUser(){
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if(password !== confirmPassword){
+                alert("Passwords do not match!");
+                return false;
+            }
+
+            alert("Registration Successful!");
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Registration</h2>
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email ID" required>
+    <input type="tel" placeholder="Phone Number" required>
+
+    <input type="password" id="password" placeholder="Password" required>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+    <button onclick="registerUser()">Register</button>
+
+    <a href="login.html">I already have an account</a>
+</div>
+
+</body>
+</html>
