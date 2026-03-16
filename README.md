@@ -50,7 +50,7 @@ Displays a simple dashboard layout after login.
 
 ## Screenshots
 
-### Home Page
+### Index Page
 ![Home](index.png.png)
 
 ### Login Page
