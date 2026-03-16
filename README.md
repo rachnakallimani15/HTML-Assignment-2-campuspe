@@ -1,51 +1,92 @@
-Authentication System Project
-  This project is a complete User Authentication System developed using VS Code and uploaded to GitHub.
-  It includes user registration, login, password reset functionality, and a dashboard with logout feature.
-  
-5 pages created:
-1️. Login Page
-Username
-Password
-Login Button
-Forgot Password (Redirects to Forgot Password Page)
-Create New Account (Redirects to Register Page)
+# Authentication System Styling
 
-2️. Register Page
-Name
-Email / ID
-Phone Number
-Password
-Confirm Password
-Register Button (Redirects to Login Page)
-“I already have an account” link (Redirects to Login Page)
+A responsive **Authentication System UI** built using **HTML, CSS, and Bootstrap 5.  
+This project demonstrates a basic authentication workflow including Login, Registration, Forgot Password, Reset Password, and Dashboard pages.
 
-3️. Forgot Password Page
-Email Input
-Send Password Reset Link Button (Redirects to Login Page)
+The goal of this project is to practice Bootstrap styling, responsive layouts, and clean UI design.
 
-4️. Reset Password Page
-Enter New Password
-Confirm New Password
-Update Password Button (Redirects to Login Page)
+## Project Description
 
-5️. Dashboard Page
-Welcome message: "Welcome to My Dashboard"
-Logout Button (Redirects to Login Page)
+This project contains a simple front-end authentication interface.  
+It includes multiple pages that simulate how a real authentication system works in web applications.
 
-Application Flow:
-User registers a new account.
-After successful registration → Redirected to Login Page.
-User logs in with valid credentials.
-After successful login → Redirected to Dashboard.
-If user forgets password:
-Clicks "Forgot Password"
-Enters email
-Redirected to Reset Password Page
-Updates password
-Redirected back to Login Page.
-Clicking Logout → Redirected to Login Page.
+The pages are styled using **Bootstrap 5 components such as cards, forms, buttons, grid system, and responsive utilities** along with custom CSS styling.
 
-Technologies Used:
-    HTML, Visual studio ,GITHUB
+## Technologies Used
 
-    
+- HTML5
+- CSS3
+- Bootstrap 5
+- Responsive Web Design
+
+## Project Pages
+
+### 1. Home Page (index.html)
+The main landing page that provides navigation to all authentication pages.
+
+### 2. Login Page (login.html)
+Allows existing users to log into the system using email and password.
+
+### 3. Register Page (register.html)
+Allows new users to create an account by entering personal details.
+
+### 4. Forgot Password Page (forgot.html)
+Allows users to request password reset instructions.
+
+### 5. Reset Password Page (reset.html)
+Allows users to update their password.
+
+### 6. Dashboard Page (dashboard.html)
+Displays a simple dashboard layout after login.
+
+## Features
+
+- Responsive layout using Bootstrap
+- Clean and modern UI design
+- Form styling using Bootstrap components
+- Navigation between authentication pages
+- Dashboard layout with cards
+- Mobile-friendly design
+
+## Screenshots
+
+### Home Page
+![Home](index.png.png)
+
+### Login Page
+![Login](login.png.png)
+
+### Register Page
+![Register](register.png.png)
+
+### Reset Password Page
+![Reset](reset.png.png)
+
+### Dashboard
+![Dashboard](dashboard.png.png)
+
+## How to Run the Project
+
+1. Download or clone the repository.
+2. Open the project folder.
+3. Run **index.html** in any web browser.
+4. Navigate through different pages using the buttons.
+
+## Learning Outcome
+
+Through this project I learned:
+
+- Bootstrap layout and components
+- Responsive web design
+- Creating structured multi-page UI
+- Using GitHub for project hosting
+
+## Author
+
+Rachna Kallimani
+Engineering Student ECE
+
+## Repository Link
+
+GitHub Repository:  
+https://github.com/rachnakallimani15/HTML-Assignment-2-campuspe
